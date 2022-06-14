@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+    <style>
+        body{
+            background-color: rgb(5, 5, 22);
+            width: 100%;
+            height: 100vh;
+        }
+        .wrapper{
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            padding-top: 50px;
+            column-gap: 1em;
+            height: 250px;
+            max-width: 80%;
+            margin: auto;
+        }
+        .wrapper .one{
+            background-color: aqua;
+        }
+        .wrapper .two{
+            background-color: red;
+        }
+
+        .wrapper-one{
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            padding-top: 1em;
+            column-gap: 1em;
+            height: 250px;
+            max-width: 80%;
+            margin: auto;
+        }
+
+        .wrapper-one .row{
+            display: grid;
+            row-gap: 1em;
+            grid-template-rows: 3fr 3fr;
+        }
+        .wrapper-one .three{
+            background-color: yellow;
+        }
+        .wrapper-one .four{
+            background-color: green;
+        }
+        .wrapper-one .five{
+            background-color: orchid;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="one"></div>
+        <div class="two"></div>
+
+    </div>
+
+    <div class="wrapper-one">
+
+        <div class="three"></div>
+        
+        <div class="row">
+           <div class="four"></div>
+
+           <div class="five"></div>
+        
+        </div>
+
+
+    </div>
+</body>
+</html>
