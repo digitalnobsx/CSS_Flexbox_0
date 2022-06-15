@@ -12,9 +12,12 @@ body {
   color: #333;
   background: white;
 }
+header{
+  display: flex;
+}
 
 header button {
-  padding: 1.25em 3em;
+  padding: 10px 20px;
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
